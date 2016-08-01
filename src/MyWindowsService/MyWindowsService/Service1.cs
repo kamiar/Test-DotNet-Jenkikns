@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.ServiceProcess;
@@ -33,6 +33,7 @@ namespace MyWindowsService
 
         private List<string> Log(List<string> lines)
         {
+            int a = 0;
             try
             {
                 File.AppendAllLines("c:\\MyWindowsService.log.txt", lines);
